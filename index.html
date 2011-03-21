@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Sears - Custom Social Interface</title>
+	<link rel="stylesheet" href="ue/home/S_HolidayHub_Home_YR_101910_social-interface.css" type="text/css" media="screen" />
+	<style type="text/css">
+		body { margin: 0; }
+		.sps_social-interface { width: 500px; }
+		.sps_social-interface #sps_social-interface { height: 350px; }
+	</style>
+</head>
+<body>
+
+<!-- Begin :: Social Feeds -->
+<div class="sps_social-interface">
+	<div class="sps_controls-wrapper sps_autoclear">
+
+		<!-- Interface Controls --> 
+		<a href="#sps_feed-fb" class="sps_controls-feed-btn" id="sps_controls-feed-btn-fb">Facebook</a>
+		<a href="#sps_feed-tw" class="sps_controls-feed-btn" id="sps_controls-feed-btn-tw">Twitter</a>
+	</div>
+
+	<div id="sps_social-interface">
+		<!-- Facebook Feed -->
+		<div id="sps_feed-fb" class="sps_ui-facebook sps_ui-loader">
+			<ul class="sps_comp-feed"></ul>
+
+		</div>
+
+		<!-- Twitter Feed -->
+		<div id="sps_feed-tw" class="sps_ui-twitter sps_ui-loader">
+			<ul class="sps_comp-feed"></ul>
+		</div>
+	</div>
+</div>
+<!-- End :: Social Feeds -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="ue/home/S_HolidayHub_Home_YR_jquery.timeago.js"></script>
+<script type="text/javascript" src="ue/home/S_HolidayHub_Home_YR_101910_social-interface.js"></script>
+<script type="text/javascript">
+	(function(w, undefined) {
+
+		// init social feeds
+		w.socialFeedGadget.initialize({
+			fbBrand: "hotelsdotcom",
+			twBrand: "hotelsdotcom",
+			prefix: "sps_"
+		});
+	})(this);
+</script>
+
+</body>
+</html>

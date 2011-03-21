@@ -1,0 +1,162 @@
+.sps_autoclear:before, .sps_autoclear:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.sps_autoclear:after { clear: both; }
+.sps_autoclear { zoom: 1; }
+
+/* Social :: Namespace */
+#sps_social-interface {
+	position: relative;
+	overflow: auto;
+	overflow-x: hidden !important; /* clip long strings of content */
+	min-height: 215px;
+}
+.sps_social-interface {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+}
+
+/* Social :: Elements */
+.sps_social-interface a { outline: 0 none; }
+.sps_social-interface a img { border: none; }
+
+/* Social :: Classnames */
+.sps_social-interface .sps_ui-loader {
+	padding-top: 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Social Controls */
+.sps_social-interface .sps_controls-wrapper {
+	position: relative;
+	top: -4px !ie;
+	left: 15px;
+	margin: 0px 0px 20px;
+}
+
+	/* Social Controls :: Classnames */
+	.sps_controls-wrapper .sps_controls-feed-btn {
+		display: inline-block;
+		display: block !ie;
+		float: left !ie;
+		height: 34px;
+		text-indent: -99999px;
+		background-repeat: no-repeat;
+		background-position: 0px -34px;
+	}
+	.sps_controls-wrapper .sps_controls-feed-btn.sps_ui-active {
+		background-position: 0px 0px;
+	}
+	
+	/* Social Controls :: ID's */
+	.sps_controls-wrapper #sps_controls-feed-btn-fb {
+		width: 112px;
+		background-image: url(S_HolidayHub_Home_YR_101310_controls-feed-fb.gif);
+	}
+	.sps_controls-wrapper #sps_controls-feed-btn-tw {
+		width: 96px;
+		background-image: url(S_HolidayHub_Home_YR_101310_controls-feed-tw.gif);
+	}
+	
+/* Social Componment */
+.sps_comp-feed {
+	margin: 0px 7px;
+	padding: 0px;
+	color: #333;
+	list-style: none;
+}
+
+/* Social Componment :: Elements */
+.sps_comp-feed a,
+.sps_comp-feed a:link,
+.sps_comp-feed a:visited {
+	text-decoration: none;
+}
+.sps_comp-feed a:hover {
+	text-decoration: underline;
+}
+.sps_comp-feed li {
+	position: relative;
+	padding: 7px 0px;
+	word-wrap: break-word;
+	border-bottom: 1px solid #eee;
+}
+
+/* Social Componment :: Modules */
+.sps_comp-feed .sps_ui-post-picture {
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+
+.sps_comp-feed .sps_ui-post-container { 
+	/*display: table;*/
+}
+	.sps_comp-feed .sps_ui-post-container a {
+		display: inline-block; /* maynot work for ie */
+	}
+	.sps_comp-feed .sps_ui-post-container .sps_ui-post-picture {
+		position: static;
+		float: left;
+		margin-right: 10px;
+	}
+.sps_comp-feed .sps_ui-post-details,
+.sps_comp-feed .sps_ui-post-attachment {
+	font-size: 9px;
+	color: #808080;
+}
+.sps_comp-feed .sps_ui-post-attachment {
+	position: relative;
+	margin-top: 7px;
+}
+	.sps_comp-feed .sps_ui-post-attachment .sps_ui-post-container a {
+		margin-bottom: 3px;
+	}
+.sps_comp-feed .sps_ui-post-details {
+	margin-top: 3px;
+}
+
+/* Social Componment :: Branding */
+.sps_ui-facebook.sps_ui-loader {
+	background-image: url(S_HolidayHub_Home_YR_ui-facebook_loader.gif);
+}
+.sps_ui-facebook .sps_comp-feed li {
+	padding-left: 60px;
+	min-height: 70px;
+}
+.sps_ui-facebook .sps_comp-feed a {
+	color: #3b5998;
+}
+	.sps_ui-facebook .sps_comp-feed .sps_ui-post-container a {
+		position: static;
+		font-weight: bold;
+	}
+	.sps_ui-facebook .sps_comp-feed .sps_ui-post-container .sps_ui-post-icon-video {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		height: 32px;
+		width: 39px;
+		background: url(S_HolidayHub_YR_101810_ui-facebook_video.png) no-repeat 0px 0px;
+	}
+.sps_ui-facebook .sps_comp-feed .sps_ui-post-details img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.sps_ui-facebook .sps_comp-feed .sps_ui-post-like {
+	margin-top: 7px;
+	padding: 3px 3px 3px 23px;
+	font-size: 9px;
+	line-height: 15px;
+	border: 1px solid #e5eaf1;
+	background: #edeff4 url(S_HolidayHub_Home_YR_ui-facebook_like.png) no-repeat 5px center;
+}
+.sps_ui-twitter .sps_comp-feed li {
+	padding-left: 83px;
+	min-height: 80px;
+}
+.sps_ui-twitter.sps_ui-loader {
+	background-image: url(S_HolidayHub_Home_YR_ui-twitter_loader.gif);
+}
+.sps_ui-twitter .sps_comp-feed a {
+	color: #0084B4;
+}
