@@ -1,0 +1,1 @@
+Client needed the ability to bring in Facebook and Twitter feeds. Supports both personal and public profiles for both Fb and Tw.
